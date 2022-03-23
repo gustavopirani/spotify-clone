@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/spotify.ico" />
+    <title>Spotify - Search page</title>
+
+    <style>
+        .montserrat {
+            font-family: 'montserrat';
+        }
+
+        .true-gray {
+            background-color: #282828;
+        }
+    </style>
+</head>
+
+<header class="h-40 w-full">
+    <div class="flex relative">
+        <div class="montserrat flex h-10 w-full text-white font-semibold text-3xl mt-12 ml-6 mb-1 2xl:text-4xl 2xl:mb-2">
+            Search
+        </div>
+    </div>
+    <div class="flex relative items-center mx-2">
+        <input type="text" class="montserrat w-full mx-4 h-12 rounded px-11 placeholder-gray-800 focus:placeholder-gray-400 font-semibold text-sm outline-none" placeholder="Artists, songs or podcasts
+        "><img src="images/search.svg" class="w-6 h-6 ml-7 absolute"/></input>
+    </div>    
+</header>
+
+<body class="bg-black">
+    <p class="montserrat text-base text-white ml-6 -mt-3 mb-4 2xl:text-3xl 2xl:text-center 2xl:mt-2 xl:text-center xl:text-2xl lg:text-center lg:text-xl md:text-center md:text-xl sm:text-center sm:text-lg">Browse all sections</p>
+    <div class="grid grid-cols-2 gap-4 mx-6 sm:grid-cols-3 md:grid-cols-3 md:gap-5 lg:grid-cols-6 2xl:gap-8 2xl:mt-6 text-sm sm:text-base">
+        <a href="https://open.spotify.com/genre/podcasts-web" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Podcasts-->
+            <div class="flex relative bg-gradient-to-b from-yellow-600 to-yellow-500 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2">
+                    <img src="images/podcasts.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Podcasts
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/new-releases-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Lançamentos-->
+            <div class="flex relative bg-gradient-to-b from-gray-500 to-green-100 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2">
+                    <img src="images/lancamentos.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-5 overflow-hidden"/>Releases
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/browse-charts-tab" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Paradas-->
+            <div class="flex relative bg-gradient-to-b from-green-800 to-green-600 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/paradas.png" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Slow Songs
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/popculture-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Em alta-->
+            <div class="flex relative bg-gradient-to-b from-yellow-800 to-yellow-500 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/em-alta.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Trending
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/thirdparty-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Criadores de tendências-->
+            <div class="flex relative bg-gradient-to-b from-red-900 to-red-600 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/tendencias.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Trend makers
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/inspirational-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Cristã-->
+            <div class="flex relative bg-gradient-to-b from-blue-600 to-blue-400 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/crista.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Christian
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/summer-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Verão-->
+            <div class="flex relative bg-gradient-to-b from-yellow-500 to-yellow-400 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/verao.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Summer
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/chill-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Relax-->
+            <div class="flex relative bg-gradient-to-b from-gray-500 to-green-100 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/relax.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Relax
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/pop-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Pop-->
+            <div class="flex relative bg-gradient-to-b from-green-500 to-green-300 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/pop.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Pop
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/concerts" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Shows-->
+            <div class="flex relative bg-gradient-to-b from-yellow-700 to-yellow-500 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/shows.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Shows
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/family-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Crianças e Família-->
+            <div class="flex relative bg-gradient-to-b from-pink-900 to-pink-700 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/family.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Children <br>and family
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/jazz-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Jazz-->
+            <div class="flex relative bg-gradient-to-b from-gray-500 to-green-100 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/jazz.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Jazz
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/alternative-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Alternativa-->
+            <div class="flex relative bg-gradient-to-b from-gray-700 to-gray-600 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/default.png" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Alternative
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/indie_alt-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Indie-->
+            <div class="flex relative bg-gradient-to-b from-indigo-800 to-blue-700 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/default.png" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Indie
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/instrumental-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Instrumental-->
+            <div class="flex relative bg-gradient-to-b from-gray-500 to-gray-400 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2">
+                    <img src="images/instrumental.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Instrumental
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/decades-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Décadas-->
+            <div class="flex relative bg-gradient-to-b from-purple-500 to-purple-300 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2 text-base">
+                    <img src="images/decadas.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-5 overflow-hidden"/>Decades
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/focus-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Foco-->
+            <div class="flex relative bg-gradient-to-b from-purple-500 to-purple-300 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/foco.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Focus
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/student-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Estudante-->
+            <div class="flex relative bg-gradient-to-b from-gray-700 to-gray-500 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/default.png" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Student
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/roots-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Folk & acústico-->
+            <div class="flex relative bg-gradient-to-b from-green-700 to-green-500 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/folk.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Folk & acoustic
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/blues-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Blues-->
+            <div class="flex relative bg-gradient-to-b from-blue-400 to-gray-600 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/blues.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Blues
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/samba___pagode-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Pagode-->
+            <div class="flex relative bg-gradient-to-b from-gray-700 to-gray-600 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/default.png" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Hip Hop
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/songwriters-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Compositores-->
+            <div class="flex relative bg-gradient-to-b from-yellow-700 to-yellow-600 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/compositores.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Composers
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/comedy-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Humor-->
+            <div class="flex relative bg-gradient-to-b from-pink-900 to-pink-600 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/humor.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Humor
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/gaming-page" target="_blank" class="overflow-hidden transform hover:scale-105"> <!--Jogos-->
+            <div class="flex relative bg-gradient-to-b from-green-400 to-blue-300 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/jogos.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Games
+                </p>
+            </div>
+        </a>
+         <a href="https://open.spotify.com/genre/travel-page" target="_blank" class="overflow-hidden lg:mb-16 transform hover:scale-105"> <!--Viagem--> 
+            <div class="flex relative bg-gradient-to-b from-yellow-600 to-yellow-500 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/viagem.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4"/>Travel
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/workout-page" target="_blank" class="overflow-hidden lg:mb-16 transform hover:scale-105"> <!--Para treinar-->
+            <div class="flex relative bg-gradient-to-b from-yellow-500 to-yellow-200 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/para-treinar.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>To train
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/brazil-page" target="_blank" class="overflow-hidden lg:mb-16 transform hover:scale-105"> <!--Brasil-->
+            <div class="flex relative bg-gradient-to-b from-gray-700 to-gray-600 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/default.png" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>USA
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/funkbrazil-page" target="_blank" class="overflow-hidden lg:mb-16 transform hover:scale-105"> <!--Funk-->
+            <div class="flex relative bg-gradient-to-b from-indigo-800 to-blue-700 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/funk.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Funk
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/tv_movies-page" target="_blank" class="overflow-hidden lg:mb-16 transform hover:scale-105"> <!--Trilhas Sonoras-->
+            <div class="flex relative bg-gradient-to-b from-pink-900 to-pink-700 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/trilhas-sonoras.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Soundtracks
+                </p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/genre/discover-page" target="_blank" class="overflow-hidden lg:mb-16 mb-16 transform hover:scale-105"> <!--Descobrir-->
+            <div class="flex relative bg-gradient-to-b from-purple-500 to-purple-400 h-24 rounded">
+                <p class="montserrat text-white pl-3 pt-2"><img src="images/discover.jpeg" class="w-16 h-16 absolute transform rotate-12 bottom-2 -right-4 overflow-hidden"/>Discover
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        <div class="flex flex-wrap items-center true-gray fixed bottom-0 h-14 w-full py-2">
+            <div class="w-1/4 text-center transform hover:scale-105 group">
+                <a href="#">
+                    <div class="flex-col relative group">
+                        <svg class="h-5 w-5 mx-auto fill-current group-hover:text-white text-gray-400"version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <path d="M475.425,200.225L262.092,4.669c-6.951-6.359-17.641-6.204-24.397,0.35L36.213,200.574
+                            c-3.449,3.348-5.399,7.953-5.399,12.758v280.889c0,9.819,7.958,17.778,17.778,17.778h148.148c9.819,0,17.778-7.959,17.778-17.778
+                            v-130.37h82.963v130.37c0,9.819,7.958,17.778,17.778,17.778h148.148c9.819,0,17.778-7.953,17.778-17.778V213.333
+                            C481.185,208.349,479.099,203.597,475.425,200.225z M445.629,476.444H333.037v-130.37c0-9.819-7.959-17.778-17.778-17.778H196.741
+                            c-9.819,0-17.778,7.959-17.778,17.778v130.37H66.37V220.853L250.424,42.216l195.206,178.939V476.444z"/></svg>
+                        <span class="montserrat text-gray-400 text-xs group-hover:text-white">Home</span>
+                    </div>
+                </a>
+            </div>
+            <div class="w-1/4 text-center transform hover:scale-105 group">    
+                <a href="#">
+                    <div class="flex-col relative group">
+                        <svg class="h-5 w-5 mx-auto fill-current group-hover:text-white text-gray-400" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                        <path id="XMLID_22_" d="M325.606,304.394L223.329,202.117c16.706-21.256,26.682-48.04,26.682-77.111
+                            C250.011,56.077,193.934,0,125.005,0C56.077,0,0,56.077,0,125.005C0,193.933,56.077,250.01,125.005,250.01
+                            c29.07,0,55.855-9.975,77.111-26.681l102.278,102.277C307.322,328.536,311.161,330,315,330c3.839,0,7.678-1.464,10.606-4.394
+                            C331.464,319.749,331.464,310.251,325.606,304.394z M30,125.005C30,72.619,72.619,30,125.005,30
+                            c52.386,0,95.006,42.619,95.006,95.005c0,52.386-42.62,95.005-95.006,95.005C72.619,220.01,30,177.391,30,125.005z"/></svg>
+                        <span class="montserrat text-gray-400 text-xs group-hover:text-white">Search</span>
+                    </div>
+                </a>
+            </div>
+            <div class="w-1/4 text-center transform hover:scale-105 group">
+                <a href="#">
+                    <div class="flex-col relative group">
+                        <svg class="mx-auto fill-current group-hover:text-white text-gray-400" viewBox="0 0 512 512" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path>
+                        </svg>
+                            
+                        <span class="montserrat text-gray-400 text-xs group-hover:text-white">Your Library</span>
+                    </div>
+                </a>
+            </div>    
+            <div class="w-1/4 text-center transform hover:scale-105 group">
+                <a href="#">
+                    <div class="flex-col relative group">
+                        <svg class="w-6 h-6 mx-auto fill-current group-hover:text-green-400 text-gray-400" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 427.652 427.652" style="enable-background:new 0 0 427.652 427.652;" xml:space="preserve">
+                        <path d="M213.826,0C95.733,0,0,95.733,0,213.826s95.733,213.826,213.826,213.826
+                            s213.826-95.733,213.826-213.826S331.919,0,213.826,0z M306.886,310.32c-2.719,4.652-7.612,7.246-12.638,7.247
+                            c-2.506,0-5.044-0.645-7.364-2c-38.425-22.456-82.815-26.065-113.295-25.138c-33.763,1.027-58.523,7.692-58.769,7.76
+                            c-7.783,2.126-15.826-2.454-17.961-10.236c-2.134-7.781,2.43-15.819,10.209-17.962c1.116-0.307,27.76-7.544,64.811-8.766
+                            c21.824-0.72,42.834,0.801,62.438,4.52c24.83,4.71,47.48,12.978,67.322,24.574C308.612,294.393,310.96,303.349,306.886,310.32z
+                            M334.07,253.861c-3.22,5.511-9.016,8.583-14.97,8.584c-2.968,0-5.975-0.763-8.723-2.369c-45.514-26.6-98.097-30.873-134.2-29.776
+                            c-39.994,1.217-69.323,9.112-69.614,9.192c-9.217,2.515-18.746-2.906-21.275-12.124c-2.528-9.218,2.879-18.738,12.093-21.277
+                            c1.322-0.364,32.882-8.937,76.77-10.384c25.853-0.852,50.739,0.949,73.96,5.354c29.412,5.58,56.241,15.373,79.744,29.108
+                            C336.115,234.995,338.897,245.603,334.07,253.861z M350.781,202.526c-3.641,0-7.329-0.936-10.7-2.906
+                            c-108.207-63.238-248.572-25.643-249.977-25.255c-11.313,3.117-23.008-3.527-26.124-14.839
+                            c-3.117-11.312,3.527-23.008,14.839-26.124c1.621-0.447,40.333-10.962,94.166-12.737c31.713-1.044,62.237,1.164,90.72,6.567
+                            c36.077,6.844,68.987,18.856,97.815,35.704c10.13,5.92,13.543,18.931,7.623,29.061C365.193,198.757,358.084,202.526,350.781,202.526"></path></svg>
+                        <span class="montserrat text-gray-400 text-xs group-hover:text-white">Premium</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
